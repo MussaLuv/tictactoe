@@ -1,75 +1,73 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Tic-Tac-Toe' 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  font-family: "Tic-Tac-Toe" "Times New Roman", Times, serif;
 }
-
 
 body {
-    display: flex;
-    background-color: aquamarine;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
+h1 {
+  display: flex;
+  text-align: center;
+}
 
 td {
-    background-color:lightcyan;
-    border: 2px solid black;
-    width: 50px;
-    height: 50px;
+  background-color: lightcyan;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
 }
 
-tr{
-    border: 2px solid green;
-    width: 500px;
-    height: 55px;
+tr {
+  border: 2px solid green;
+  width: 500px;
+  height: 55px;
 }
 
 .board {
-    width: 360px;
-    height: 360px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .board > :nth-child(2) {
-    border-top: none;
-} 
-
+  border-top: none;
+}
 
 .board > :nth-child(1) {
-    border-top: none;
-    border-left: none;
+  border-top: none;
+  border-left: none;
 }
 
 .board > :nth-child(3) {
-    border-top: none;
-    border-right: none;
+  border-top: none;
+  border-right: none;
 }
 
 .board > :nth-child(4) {
-    border-left: none;
+  border-left: none;
 }
 
 .board > :nth-child(6) {
-    border-right: none;
+  border-right: none;
 }
 
 .board > :nth-child(7) {
-    border-left: none;
-    border-bottom: none;
+  border-left: none;
+  border-bottom: none;
 }
 
 .board > :nth-child(8) {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .board > :nth-child(9) {
-    border-bottom: none;
-    border-right: none;
+  border-bottom: none;
+  border-right: none;
 }
-
-

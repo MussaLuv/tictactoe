@@ -60,25 +60,12 @@ var button = document.createElement("button");
 button.innerHTML = "click";
 document.body.appendChild(button);
 
-// gameState.board.addEventListener("click", function (event) {
-// console.log(event.target)
-
-// if(event.target) {
-
-// }
-// }
-
-// gameState.board[0][0] = 'x'
-
-// gameState.board[2][2] = 'o'
-
-// gameState.board[1][1] = gameState.players[0]
-
-//   console.log(gameState)
-
-//  Element.addEventListener('click', function(event)) {
-
-//  }
+const form = document.querySelector("#player1name");
+const inputData = document.querySelector("#nameOne");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log(inputData.value);
+});
 
 // find a way to get into the object - to try to get the board to another value
 
