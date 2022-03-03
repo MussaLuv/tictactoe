@@ -56,15 +56,18 @@ gameZone.addEventListener("click", function (event) {
   console.log(gameState.board);
 });
 
-var button = document.createElement("button");
-button.innerHTML = "click";
-document.body.appendChild(button);
-
 const form = document.querySelector("#player1name");
-const inputData = document.querySelector("#nameOne");
+const inputDataOne = document.querySelector("#nameOne");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log(inputData.value);
+  console.log(inputDataOne.value);
+});
+
+const formTwo = document.querySelector("#player2name");
+const inputDataTwo = document.querySelector("#nameTwo");
+formTwo.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log(inputDataTwo.value);
 });
 
 // find a way to get into the object - to try to get the board to another value
