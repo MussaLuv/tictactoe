@@ -11,33 +11,42 @@
     <title>TicTacToe</title>
   </head>
   <body>
-    <h1>Tic-Tac-Toe</h1>
-    <table class="board">
-      <tr id="tacArea">
-        <td id="0,0"></td>
-        <td id="0,1"></td>
-        <td id="0,2"></td>
-      </tr>
-      <tr>
-        <td id="1,0"></td>
-        <td id="1,1"></td>
-        <td id="1,2"></td>
-      </tr>
-      <tr>
-        <td id="2,0"></td>
-        <td id="2,1"></td>
-        <td id="2,2"></td>
-      </tr>
-    </table>
-    <form id="player1name">
-      <label for="name">Player 1 Enter Name</label>
-      <input type="text" name="name" id="nameOne" />
-      <input type="submit" value="submit" />
-    </form>
-    <form id="player2name">
-      <label for="name">Player 2 Enter Name</label>
-      <input type="text" name="name" id="nameTwo" />
-      <input type="submit" value="submit" />
-    </form>
+    <section>
+      <h1 class="head">Tic-Tac-Toe</h1>
+      <h6 class="p1"></h6>
+      <h6 class="p2"></h6>
+    </section>
+    <section>
+      <table class="board">
+        <tr id="tacArea">
+          <td id="0,0"></td>
+          <td id="0,1"></td>
+          <td id="0,2"></td>
+        </tr>
+        <tr>
+          <td id="1,0"></td>
+          <td id="1,1"></td>
+          <td id="1,2"></td>
+        </tr>
+        <tr>
+          <td id="2,0"></td>
+          <td id="2,1"></td>
+          <td id="2,2"></td>
+        </tr>
+      </table>
+      <form id="player1name">
+        <label for="name">Player 1 Enter Name</label>
+        <input type="text" value="" name="name" id="nameOne" />
+        <input type="submit" value="Submit" />
+      </form>
+      <form id="player2name">
+        <label for="name">Player 2 Enter Name</label>
+        <input type="text" value="" name="name" id="nameTwo" />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <section>
+      <button id="reset">Reset</button>
+    </section>
   </body>
 </html>

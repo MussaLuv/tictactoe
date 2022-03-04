@@ -24,31 +24,22 @@ const gameState = {
   ],
 };
 
-// gameState.board[0][0] = 'x'
-// gameState.board[0][1] = 'o'
-// gameState.board[0][2] = 'x'
-// gameState.board[1][0] = 'x'
-// gameState.board[1][1] = 'o'
-// gameState.board[1][2] = 'x'
-// gameState.board[2][0] = 'x'
-// gameState.board[2][1] = 'o'
-// gameState.board[2][2] = 'x'
-
 const gameZone = document.querySelector("table");
 
 gameZone.addEventListener("click", function (event) {
   if (event.target.nodeName === "TD") {
     let row = event.target.id[0];
     let column = event.target.id[2];
-
     console.log({ row, column });
 
     gameState.board[row][column] =
       gameState.players[gameState.currentPlayerIndex];
 
     if (gameState.currentPlayerIndex === 0) {
+      event.target.innerHTML = "x";
       gameState.currentPlayerIndex = 1;
     } else if (gameState.currentPlayerIndex === 1) {
+      event.target.innerHTML = "o";
       gameState.currentPlayerIndex = 0;
     }
   }
@@ -60,7 +51,9 @@ const form = document.querySelector("#player1name");
 const inputDataOne = document.querySelector("#nameOne");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log(inputDataOne.value);
+  // let playOne = document.querySelector(".p1");
+  // playOne.innerHTML = "hi";
+  console.log(document.querySelector("#player1name"));
 });
 
 const formTwo = document.querySelector("#player2name");
